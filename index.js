@@ -50,6 +50,14 @@ function Delete() {
     document.getElementById("inputB").value = '';
 }
 
-let a = [1,2,3]
-let b = [...a,4,5,6]
-console.log(b.length)
+var  a = 'Tuan la Tao Tao'
+console.log(a)
+//1. lenght
+//2. indexOf()
+//3.lastIndexOf()
+//4. slice()
+//5. replace
+//6. toUppercase
+//7. toLowerCase
+//8. trim()
+
