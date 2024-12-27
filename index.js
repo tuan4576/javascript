@@ -52,12 +52,13 @@ function Delete() {
 
 var  a = 'Tuan la Tao Tao'
 console.log(a)
-//1. lenght
-//2. indexOf()
-//3.lastIndexOf()
-//4. slice()
-//5. replace
-//6. toUppercase
-//7. toLowerCase
-//8. trim()
-
+// vị trí , cắt , chuyển đổi , nối , xóa khoảng trống hai bên , thêm , lặp , thay thế , chuyển đôi
+// vị trí : at(), charAt()
+//cắt slice , subtring, str[]
+// chuyển đổi : toUppercase , toLowercase
+// nối : concat()
+//xóa không khoảng trống: trim , trimStart, trimEnd
+// thêm  : padStart , padEnd
+// lặp repeat
+// thay thế : replace
+//chuyển đổi : split
