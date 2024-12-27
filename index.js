@@ -50,8 +50,8 @@ function Delete() {
     document.getElementById("inputB").value = '';
 }
 
-var  a = 'Tuan la Tao Tao'
-console.log(a)
+
+// String method
 // vị trí , cắt , chuyển đổi , nối , xóa khoảng trống hai bên , thêm , lặp , thay thế , chuyển đôi
 // vị trí : at(), charAt()
 //cắt slice , subtring, str[]
@@ -61,4 +61,29 @@ console.log(a)
 // thêm  : padStart , padEnd
 // lặp repeat
 // thay thế : replace
-//chuyển đổi : split
+//chuyển đổi : split  
+
+//Array method  
+let array = ['Táo', 'Chuối', 'Mận', 'Mit',[1,2,3]];
+console.log(array); 
+
+// độ dài, vị trí, nối,
+// delete array[number]
+// độ dài  : lenght
+// vị trí : at ,
+// nối : join 
+// xóa phần tử cuối : pop()
+// thêm phần tử ở cuối : push() != đến mảng trả về
+// xóa phần tử đầu : shift() 
+// thêm phần đầu : unshift
+// thay đổi giá trị bằng chỉ số []
+// gộp mảng : concat != thêm cuối được 
+// copy giá trị ghi đè lên : copyWithin()
+// flat làm phẳng 
+// slice 
+// splice  khó vl 
+// flatMap() khó
+// toString
+//
+
+
