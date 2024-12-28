@@ -64,8 +64,8 @@ function Delete() {
 //chuyển đổi : split() chuyenr thành mảng 
 
 //Array method  
-let array = ['Táo', 'Chuối', 'Mận', 'Mit',[1,2,3]];
-console.log(array.includes("Táo")); 
+// let array = ['Táo', 'Chuối', 'Mận', 'Mit',[1,2,3]];
+// console.log(array.includes("Táo")); 
 
 // độ dài, vị trí, nối, 
 // delete array[number]
@@ -96,4 +96,13 @@ console.log(array.includes("Táo"));
 // find(callback(element, index, array), thisArg) chỉ số của vị trí đầu tiên
 // findLast(callback(element, index, array), thisArg) tìm cuối 
 // findLastIndex(callback(element, index, array), thisArg) tìm chỉ số của phần tử
-  
+
+
+
+function myFunction(callback){
+    callback('tuấn')
+}
+function CallBack(value){
+    console.log('Tên là ',value)
+}
+myFunction(CallBack)
