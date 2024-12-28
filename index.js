@@ -53,21 +53,21 @@ function Delete() {
 
 // String method
 // vị trí , cắt , chuyển đổi , nối , xóa khoảng trống hai bên , thêm , lặp , thay thế , chuyển đôi
-// vị trí : at(), charAt()
-//cắt slice , subtring, str[]
-// chuyển đổi : toUppercase , toLowercase
+// vị trí : at(number), charAt(number)
+//cắt slice() , subtring(), str[]
+// chuyển đổi : toUppercase() , toLowercase()
 // nối : concat()
-//xóa không khoảng trống: trim , trimStart, trimEnd
-// thêm  : padStart , padEnd
-// lặp repeat
-// thay thế : replace
-//chuyển đổi : split  
+//xóa không khoảng trống: trim() , trimStart(), trimEnd()
+// thêm  : padStart(number || string) , padEnd(number || string )
+// lặp repeat(number)
+// thay thế : replace(string| number, string | number)
+//chuyển đổi : split() chuyenr thành mảng 
 
 //Array method  
 let array = ['Táo', 'Chuối', 'Mận', 'Mit',[1,2,3]];
-console.log(array); 
+console.log(array.includes("Táo")); 
 
-// độ dài, vị trí, nối,
+// độ dài, vị trí, nối, 
 // delete array[number]
 // độ dài  : lenght
 // vị trí : at ,
@@ -81,9 +81,19 @@ console.log(array);
 // copy giá trị ghi đè lên : copyWithin()
 // flat làm phẳng 
 // slice 
-// splice  khó vl 
+// splice  (start, deleteCount,'item') thao tác trực tiếp vào mảng
 // flatMap() khó
-// toString
-//
+// toString chuyển thành chuỗi
+//toSpliced() tạo ra một mảng mới không như splice
 
 
+//search 
+// indexOf(string | number)
+// indexOf(item,start)
+// lastIndexOf()
+// includes(valueToFind, fromIndex) xem có tồn tại hay không nếu có thì true
+// find(callback(element, index, array), thisArg) tìm phần tử đầu tiên 
+// find(callback(element, index, array), thisArg) chỉ số của vị trí đầu tiên
+// findLast(callback(element, index, array), thisArg) tìm cuối 
+// findLastIndex(callback(element, index, array), thisArg) tìm chỉ số của phần tử
+  
