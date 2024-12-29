@@ -98,11 +98,30 @@ function Delete() {
 // findLastIndex(callback(element, index, array), thisArg) tìm chỉ số của phần tử
 
 
+//Object 
+// function Constructor
+// function Objectt(ten,tuoi,lop){
+//     this.ten = ten,
+//     this.tuoi = tuoi,
+//     this.lop = lop
+// }
+// const person = new Objectt('tuan',27,'E')
+// console.log(person.lop)
 
-function myFunction(callback){
-    callback('tuấn')
-}
-function CallBack(value){
-    console.log('Tên là ',value)
-}
-myFunction(CallBack)
+// class Objectt{
+//     constructor(ten,tuoi,lop){
+//         this.ten = ten,
+//         this.tuoi = tuoi,
+//         this.lop = lop
+//         this.GetName = function(){
+//             return `${this.ten} : ${this.tuoi}`
+//         }
+//     }
+// }
+// Objectt.prototype.namsinh = 24
+// const person = new Objectt('tuan',20,'E')
+// person.mon = 'toan'
+// console.log(person.GetName())
+
+const Objectt = {ten:"tuan",tuoi:20}
+console.log(Objectt.ten)
