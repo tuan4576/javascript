@@ -123,5 +123,40 @@ function Delete() {
 // person.mon = 'toan'
 // console.log(person.GetName())
 
-const Objectt = {ten:"tuan",tuoi:20}
-console.log(Objectt.ten)
+
+// class First{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     show(){
+//         console.log(`${this.name} was noise`)
+//     }
+// }
+// class Second extends First{
+//     constructor(name,tuoi){
+//         super(name);
+//         this.tuoi = tuoi;
+//     }
+//     show(){
+//         super.show();
+//         console.log(`${this.tuoi} dance`)
+//     }
+// }
+// const goi = new Second('tuan',23)
+// goi.show()
+
+
+
+// const now = new Date();
+// console.log(now.getFullYear()); // Năm
+// console.log(now.getMonth());    // Tháng (bắt đầu từ 0)
+// console.log(now.getDate());     // Ngày
+// console.log(now.getHours());    // Giờ
+// console.log(now.getMinutes());  // Phút
+// console.log(now.getSeconds());  // Giây
+// function updateSeconds() {
+//     const now = new Date();
+//     document.getElementById("test").innerHTML = now.getSeconds();
+// }
+// setInterval(updateSeconds, 1000); // Cập nhật mỗi giây
+
