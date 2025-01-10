@@ -1,162 +1,76 @@
-function Nhan(a, b) {
-    return a * b;
-}
-function Cong(a,b){
-    return a + b;
-}
-function Tru(a,b){
-    return a - b;
-}
-function Chia(a,b){
-    return a / b;
-}
-function ChiaDu(a,b){
-    return a % b;
-}
+// toán tử logic && || !
+// tóan tử số học + - * / ** %
+// toán tử gán = += -= /= *= %= **=
+// toán tử so sánh > < == === != !=== <= >=
 
-function Option(operation, a, b) {
-    let result;
-    switch (operation) {
-        case "Cong":
-            result = Cong(a,b);
-            break;
-        case "Tru":
-            result = Tru(a,b);
-            break;
-        case "Nhan":
-            result = Nhan(a, b);
-            break;
-        case "Chia":
-            result = Chia(a,b);
-            break;
-        case "ChiaDu":
-            result = ChiaDu(a,b);
-            break;
-    }
-    return result;
-}
+// const string1 = '  Bài toán về chuỗi'
+// const string2 = '  Bài toán về chuỗi'
+// // tìm , cắt , chuyển hoa thường, nối, space đầu cuối, thêm , lặp, thay thế , chuyển array
+// tìm kiếm search../index  match / matchAll , includes => true, false : bất kì vị trí nào  , startswith, endswith 
+// console.log(string1.at(6)) // tìm vị trí
+// console.log(string1.slice(3))// cắt
+// console.log(string1.trim())
+// console.log(string1.trimStart())
+// console.log(string1.toLowerCase())
+// console.log(string1.toUpperCase())
+// console.log(string1.concat(string2))
+// console.log(string1.repeat(4))
+// console.log(string1.replaceAll('Bài', 'Chuyển'))
+// console.log(string1.split(''))
+// console.log(string1.padStart(22, 'Tên '))
+// console.log(string1.length)
 
-function Click() {
-    const operation = document.getElementById("operation").value;
-    const a = parseFloat(document.getElementById("inputA").value) || 0;
-    const b = parseFloat(document.getElementById("inputB").value) || 0;
-    const result = Option(operation, a, b);
-    document.getElementById("demo").innerHTML = result;
-}
-
-function Delete() {
-    document.getElementById("demo").innerHTML = '';
-    document.getElementById("inputA").value = '';
-    document.getElementById("inputB").value = '';
-}
+// array
+// đếm , nối , nối kí tự(join), xóa thêm cuối, xóa thêm đầu,[], cắt
+//copy copywithin, lằm phẳng flat
+const array1 = ['Cam', 'Xoai', 'Mit','Buoi',['Chuoi'],'Cam']
+// const array2 = [1,2,3]
+// console.log(array1[2] = 'cam'),xóa và thay thế splice, chuyển thành chuõi
 
 
-// String method
-// vị trí , cắt , chuyển đổi , nối , xóa khoảng trống hai bên , thêm , lặp , thay thế , chuyển đôi
-// vị trí : at(number), charAt(number)
-//cắt slice() , subtring(), str[]
-// chuyển đổi : toUppercase() , toLowercase()
-// nối : concat()
-//xóa không khoảng trống: trim() , trimStart(), trimEnd()
-// thêm  : padStart(number || string) , padEnd(number || string )
-// lặp repeat(number)
-// thay thế : replace(string| number, string | number)
-//chuyển đổi : split() chuyenr thành mảng 
-
-//Array method  
-// let array = ['Táo', 'Chuối', 'Mận', 'Mit',[1,2,3]];
-// console.log(array.includes("Táo")); 
-
-// độ dài, vị trí, nối, 
-// delete array[number]
-// độ dài  : lenght
-// vị trí : at ,
-// nối : join 
-// xóa phần tử cuối : pop()
-// thêm phần tử ở cuối : push() != đến mảng trả về
-// xóa phần tử đầu : shift() 
-// thêm phần đầu : unshift
-// thay đổi giá trị bằng chỉ số []
-// gộp mảng : concat != thêm cuối được 
-// copy giá trị ghi đè lên : copyWithin()
-// flat làm phẳng 
-// slice 
-// splice  (start, deleteCount,'item') thao tác trực tiếp vào mảng
-// flatMap() khó
-// toString chuyển thành chuỗi
-//toSpliced() tạo ra một mảng mới không như splice
+// console.log(array1.findLastIndex(element => element === "Cam"))
+// console.log(array1)
+// round() làm tròn lên từ 0.5 , ceil() làm tròn từ 0.1 , floor() lấy từ số nguyên  , 
+// console.log(Math.floor(4))
 
 
-//search 
-// indexOf(string | number)
-// indexOf(item,start)
-// lastIndexOf()
-// includes(valueToFind, fromIndex) xem có tồn tại hay không nếu có thì true
-// find(callback(element, index, array), thisArg) tìm phần tử đầu tiên 
-// find(callback(element, index, array), thisArg) chỉ số của vị trí đầu tiên
-// findLast(callback(element, index, array), thisArg) tìm cuối 
-// findLastIndex(callback(element, index, array), thisArg) tìm chỉ số của phần tử
+// toán tử số + - * / % ** 
+// toán tử logic && || !
+// toán tử gán  = += -= *= /= 
+// toán tử so sánh < > <= >=  == === != !== 
 
 
-//Object 
-// function Constructor
-// function Objectt(ten,tuoi,lop){
-//     this.ten = ten,
-//     this.tuoi = tuoi,
-//     this.lop = lop
-// }
-// const person = new Objectt('tuan',27,'E')
-// console.log(person.lop)
-
-// class Objectt{
-//     constructor(ten,tuoi,lop){
-//         this.ten = ten,
-//         this.tuoi = tuoi,
-//         this.lop = lop
-//         this.GetName = function(){
-//             return `${this.ten} : ${this.tuoi}`
-//         }
-//     }
-// }
-// Objectt.prototype.namsinh = 24
-// const person = new Objectt('tuan',20,'E')
-// person.mon = 'toan'
-// console.log(person.GetName())
+// ?? : nếu là null hoặc undifind chọn giá trị 2
+// || : nếu là 0 hoặc "" thì chọn giá trị 2
+// ?. nếu trong đối tượng không có phương thức hoặc thuộc tính đó thì không xuất lổi ra
+// &&= giống điều kiện if  nếu đúng thì nó sẽ gán 
+// ||= nếu điều kiện if sai thì nó sẽ gán 
+// ??= nếu giá trị kiểm tra null hoặc undefined thì ở trong sẽ được gán
 
 
-// class First{
-//     constructor(name){
-//         this.name = name;
-//     }
-//     show(){
-//         console.log(`${this.name} was noise`)
-//     }
-// }
-// class Second extends First{
-//     constructor(name,tuoi){
-//         super(name);
-//         this.tuoi = tuoi;
-//     }
-//     show(){
-//         super.show();
-//         console.log(`${this.tuoi} dance`)
-//     }
-// }
-// const goi = new Second('tuan',23)
-// goi.show()
+// add , clear, has, delete, value , forEarch ,size
+// const test = new Set([1,2,3,4,5])
+// test.add(6)
+// test.add(7)
+// test.add(8)
+// test.add(9)
+// let a = test.entries()
+// console.log(test.keys())
+// test.forEach(value => {
+//     console.log(value)
+// })
+// console.log(test)
+
+//
+
+// const test = new Map([['tao',500],['quyt',600],['le',300]])
+// test.set('man',400)
 
 
+// let a = test.entries()
+// console.log(a)
+// console.log(test)
 
-// const now = new Date();
-// console.log(now.getFullYear()); // Năm
-// console.log(now.getMonth());    // Tháng (bắt đầu từ 0)
-// console.log(now.getDate());     // Ngày
-// console.log(now.getHours());    // Giờ
-// console.log(now.getMinutes());  // Phút
-// console.log(now.getSeconds());  // Giây
-// function updateSeconds() {
-//     const now = new Date();
-//     document.getElementById("test").innerHTML = now.getSeconds();
-// }
-// setInterval(updateSeconds, 1000); // Cập nhật mỗi giây
-
+const a = '{"name": "Tuan","age": 25,"isStudent": true}'
+const object = JSON.parse(a)
+console.log(object.age) 
