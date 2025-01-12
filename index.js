@@ -71,6 +71,55 @@ const array1 = ['Cam', 'Xoai', 'Mit','Buoi',['Chuoi'],'Cam']
 // console.log(a)
 // console.log(test)
 
-const a = '{"name": "Tuan","age": 25,"isStudent": true}'
-const object = JSON.parse(a)
-console.log(object.age) 
+// const a = '{"name": "Tuan","age": 25,"isStudent": true}'
+// const object = JSON.parse(a)
+// console.log(object.age) 
+
+
+const courses  = [
+    {
+        id : 1,
+        name : 'javascript',
+        coin : 0
+    },
+    {
+        id : 2,
+        name : 'html',
+        coin : 0
+    },
+    {
+        id : 3,
+        name : 'PHP',
+        coin : 0
+    },
+    {
+        id : 4,
+        name : 'Ruby',
+        coin : 350
+    },
+    {
+        id : 5,
+        name : 'Ruby',
+        coin : 350
+    },
+]
+function reducee(total,value,index,array){
+    let a  = total + value.coin
+    console.log(array)
+    return a
+}
+var Tong = courses.reduce(reducee,0)
+console.log(Tong)
+
+//forEach, every ,some , find, filter, map, reduce
+
+// var isFree = courses.map((course, index)=>{
+//     return {
+//         id : course.id,
+//         name : `Tên : ${course.name}`,
+//         coin : `Xu : ${course.coin}`,
+//         index: index
+//     }
+// })
+// console.log(isFree) 
+
