@@ -76,6 +76,55 @@ const array1 = ['Cam', 'Xoai', 'Mit','Buoi',['Chuoi'],'Cam']
 // console.log(object.age) 
 
 
+//------------------------------------ vòng lặp 
+// for (var i = 0; i < 5 ; i++){
+//     console.log(`Số lần lặp là ${i}`)
+// }
+// let i = 0;
+// while (i < 5){
+//     console.log(`Số lần lặp là ${i}`)
+//     i++;
+// }
+// let i  = 0;
+// do
+// {
+//  console.log(`Số lần lặp là ${i}`)
+//  i++;
+// }
+// while(i < 5)
+
+// const obj = {a:1,b:2,c:3};
+// for(value in obj){
+//     console.log(`${value} : ${obj[value]}`)
+// }
+
+// const arr = [1,2,3]
+// // for(value of arr){
+// //     console.log(`${value}`)
+// // }
+// arr.forEach((value,index) => {
+//     console.log(`chỉ số là ${index} : giá trị là ${value}`)
+// })
+
+function tinh(a,b){
+    try{
+        if(typeof a !== 'number' || typeof b !== 'number'){
+            throw new Error("lỗi nè mấy cha")
+        }
+        if(b===0){
+            throw new Error("không thể chia cho 0 ")
+        }
+        let result = a / b;
+        console.log(`${result}`)
+    }catch(error){
+       throw new Error("không thể chia cho 0 ")
+    }finally{
+        console.log("quá trình giải kết thúc")
+    }
+}
+
+tinh(8,0)
+
 const courses  = [
     {
         id : 1,
@@ -103,13 +152,13 @@ const courses  = [
         coin : 350
     },
 ]
-function reducee(total,value,index,array){
-    let a  = total + value.coin
-    console.log(array)
-    return a
-}
-var Tong = courses.reduce(reducee,0)
-console.log(Tong)
+// function reducee(total,value,index,array){
+//     let a  = total + value.coin
+//     console.log(array)
+//     return a
+// }
+// var Tong = courses.reduce(reducee,0)
+// console.log(Tong)
 
 //forEach, every ,some , find, filter, map, reduce
 
@@ -121,5 +170,4 @@ console.log(Tong)
 //         index: index
 //     }
 // })
-// console.log(isFree) 
-
+// console.log(isFree)
